@@ -1,0 +1,134 @@
+:root {
+	--green-background-color: #8EA775;
+	--blue-background-color: #687787;
+}
+
+body {
+	/*background-image: url("Desktop.png");*/
+	background-color: #687787;
+	/*#7cd7da*/
+}
+
+.tint {
+	width: 100vw;
+	height: 100vh;
+	background: #FFF;
+	opacity: 0.5;
+}
+
+#clock {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 29vh;
+	/*background: #222;*/
+}
+
+#searchbar {
+	padding-top:0;
+	text-align: center;
+
+}
+
+.search {
+	background: white;
+	border-color: white;
+	border-width: 4px;
+	border-style: solid;
+	width: 250px;
+}
+
+.category {
+	color: white;
+	font-size: 25px;
+}
+
+.MARKER {
+	background: #450;
+}
+
+.category {
+	border-style: solid;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom-width: 1px;
+	color: #FFF;
+}
+
+.list-item {
+	color: white;
+	font-size: 10px;
+}
+
+.list-style-type {
+	list-style-type: none;
+}
+
+/*a, a:hover, a:active, a:visited {
+	color: white;
+}*/
+
+/* The Overlay (background) */
+.overlay {
+	 /* Height & width depends on how you want to reveal the overlay (see JS below) */
+	 height: 100%;
+	 width: 0;
+	 position: fixed; /* Stay in place */
+	 z-index: 1; /* Sit on top */
+	 left: 0;
+	 top: 0;
+	 /*background-color: #8EA775;*/
+	 background-color: var(--blue-background-color);
+	 overflow-x: hidden; /* Disable horizontal scroll */
+	 transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+	 position: relative;
+	 top: 25%; /* 25% from the top */
+	 width: 100%; /* 100% width */
+	 text-align: center; /* Centered text/links */
+	 margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+	 padding: 2px;
+	 text-decoration: none;
+	 font-size: 20px;
+	 /*color: #fff;*/
+	 display: block; /* Display block instead of inline */
+	 transition: 0.25s; /* Transition effects on hover (color) */
+	 text-align: left;
+	 list-style-type: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay > .list-style-type > li > a:hover{
+	 color: #fff1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+	 position: absolute;
+	 top: 20px;
+	 right: 45px;
+	 font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+	 .overlay a {font-size: 20px}
+	 .overlay .closebtn {
+			 font-size: 40px;
+			 top: 15px;
+			 right: 35px;
+	 }
+}
+
+
+a {
+	color: white;
+}
